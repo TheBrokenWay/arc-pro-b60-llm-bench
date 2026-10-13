@@ -46,6 +46,18 @@ Raw output: `results/huihui-qwen3.8-27b-abliterated-q4km/`.
 
 The model card publishes no sampling settings; the harness defaults were used.
 
+### Huihui-Qwen3.8-27B abliterated, Q4_K_M, both cards (layer split, tensor split 1,1)
+
+Same model and settings as the single-card run above; the server splits the layers across Vulkan0 and Vulkan1. Both cards held about 9 GB each during the run.
+
+| Task | Metric | Single card | Both cards | Stderr (both) |
+|---|---|---|---|---|
+| MMLU-Pro (140-question sample) | exact match | 0.3786 | 0.4214 | 0.0416 |
+| IFEval (100 prompts) | prompt-level strict | 0.6900 | 0.6400 | 0.0482 |
+| IFEval (100 prompts) | prompt-level loose | 0.7000 | 0.6400 | 0.0482 |
+
+The two-card run is not faster or more accurate in a way these samples can show: each difference is smaller than one standard error. Raw output: `results/huihui-qwen3.8-27b-abliterated-q4km-dual/`.
+
 ### Qwen3.8-27B Heretic, Q4_K_M, card 0 (Vulkan0)
 
 | Task | Metric | Value | Stderr |
