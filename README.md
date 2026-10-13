@@ -46,9 +46,18 @@ Raw output: `results/huihui-qwen3.8-27b-abliterated-q4km/`.
 
 The model card publishes no sampling settings; the harness defaults were used.
 
+### Qwen3.8-27B Heretic, Q4_K_M, card 0 (Vulkan0)
+
+| Task | Metric | Value | Stderr |
+|---|---|---|---|
+| MMLU-Pro (140-question sample) | exact match | 0.3357 | 0.0402 |
+| IFEval (100 prompts) | pending | | |
+
+Raw output: `results/qwen3.8-27b-heretic-q4km/` (MMLU-Pro; IFEval to follow).
+
 ### Pending
 
-- Qwen3.8-27B Heretic, Q4_K_M, card 0: run in progress; results will be added here.
+- Qwen3.8-27B Heretic IFEval (run in progress).
 - Two-card (split) runs and the remaining downloaded models: not yet run.
 
 ## Lessons (from this bench)
