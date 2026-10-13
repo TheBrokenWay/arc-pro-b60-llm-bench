@@ -51,13 +51,15 @@ The model card publishes no sampling settings; the harness defaults were used.
 | Task | Metric | Value | Stderr |
 |---|---|---|---|
 | MMLU-Pro (140-question sample) | exact match | 0.3357 | 0.0402 |
-| IFEval (100 prompts) | pending | | |
+| IFEval (100 prompts) | prompt-level strict | 0.7200 | 0.0451 |
+| IFEval (100 prompts) | prompt-level loose | 0.7300 | 0.0446 |
+| IFEval (100 prompts) | instruction-level strict | 0.7055 | n/a |
+| IFEval (100 prompts) | instruction-level loose | 0.7117 | n/a |
 
-Raw output: `results/qwen3.8-27b-heretic-q4km/` (MMLU-Pro; IFEval to follow).
+Raw output: `results/qwen3.8-27b-heretic-q4km/`.
 
 ### Pending
 
-- Qwen3.8-27B Heretic IFEval (run in progress).
 - Two-card (split) runs and the remaining downloaded models: not yet run.
 
 ## Lessons (from this bench)
