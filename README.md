@@ -12,7 +12,7 @@ Published so other people with the same hardware do not have to repeat the same 
 | CPU | AMD Ryzen Threadripper PRO 5955WX |
 | RAM | 256 GB |
 | OS | Windows 11 (the server runs natively on Windows; WSL is not in the request path) |
-| GPU driver | not yet recorded in this repo; to be added before results are quoted |
+| GPU driver | Intel Arc Pro Graphics driver 32.0.101.8976 (Q3.26) on the Intel Arc Pro B60 24 GB (Vulkan GPU0); Intel Graphics Software 26.26.2459.3 |
 
 ## Software
 
